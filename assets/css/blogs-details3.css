@@ -7,18 +7,30 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
+  .blogs-heading-text {
+    width: 62.5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .blogs-heading-text {
     width: 80%;
   }
 }
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 768px) {
   .blogs-heading-text {
     width: 85%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 576px) {
   .blogs-heading-text {
     width: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .blogs-heading-text {
+    width: clamp(280px, 93.5%, 93.5%);
   }
 }

@@ -564,7 +564,7 @@ footer ul li a.active::after {
     width: 19px;
   }
   .header .navbar {
-    padding: 6px clamp(12px, 2.2vw, 48px) 6px;
+    padding: 8px clamp(12px, 2.2vw, 48px) 8px;
   }
 
   .header .navbar .navbar-brand .logo {
