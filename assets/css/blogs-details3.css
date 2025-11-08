@@ -1,0 +1,24 @@
+.blogs-heading-text {
+  width: 60%;
+}
+@media screen and (max-width: 1600px) {
+  .blogs-heading-text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogs-heading-text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blogs-heading-text {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .blogs-heading-text {
+    width: 90%;
+  }
+}

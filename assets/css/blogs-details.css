@@ -1,0 +1,309 @@
+img {
+  width: 100%;
+  height: auto;
+}
+.header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+.blogs-section {
+  position: relative;
+  overflow: hidden;
+}
+.blogs-section .heading {
+  display: flex;
+  background: linear-gradient(to right, #e6edec 1%, #99ddc9 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(35px, 5.52vw, 106px) 0 clamp(20px, 5.21vw, 101px)
+    clamp(20px, 3.5vw, 68px);
+}
+.blogs-heading-text {
+  width: 50%;
+  position: relative;
+  z-index: 11;
+}
+.blog-section-content-lists h3 {
+  font-size: 22px !important;
+}
+.blogs-section h2 {
+  font-size: 50px;
+}
+.heading-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  /* height: calc(30vh + 20px); */
+  /* width: 30%; */
+  z-index: 1;
+}
+.heading-pattern img {
+  width: 100%;
+  height: 100%;
+}
+.breadcrumb {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey-color);
+}
+.breadcrumb-item {
+  padding-left: 0.1rem !important;
+}
+.breadcrumb > li > a {
+  color: var(--black-color);
+}
+.heading-text-content {
+  width: 53%;
+}
+.heading-text-content h2 {
+  font-size: 50px;
+}
+.blogs-content-section {
+  margin-bottom: 5%;
+}
+.blogs-section-container {
+  margin: auto;
+  margin-top: 4.5%;
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+}
+.shareimage-btn {
+  width: clamp(20px, 4%, 4%);
+}
+.blogs-related-articles {
+  background-color: #f6f6f6;
+}
+.blogs-related-articles-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3%;
+  font-family: "Poppins", sans-serif;
+}
+.blogs-related-articles-container h2:first-child {
+  font-size: clamp(24px, 1.8vw, 36px);
+}
+.blogs-cards-container {
+  gap: 2rem;
+  justify-content: space-between;
+}
+.blogs-cards-container .cards {
+  width: 31%;
+}
+.blogs-cards-container .cards:hover {
+  cursor: pointer;
+}
+.blogs-cards-container .cards h4 {
+  font-size: 20px;
+  color: #111111;
+}
+.blog-section-content-lists ul li {
+  color: var(--grey-color);
+}
+.cards .card-image-wrapper {
+  overflow: hidden;
+}
+.cards .card-image-wrapper img {
+  transition: all  0.4s ease;
+}
+.cards:hover .card-image-wrapper img {
+  transform: scale(1.1);
+}
+.playbook-btn{
+  padding:clamp(5px, 0.58vw, 11px) clamp(20px, 3.6vw, 69px);
+}
+.copyright-container a {
+  color: #111111 !important;
+}
+@media screen and (max-width: 1600px) {
+  .blogs-heading-text {
+    width: 60%;
+  }
+  .blogs-heading-text h2 {
+    font-size: 45px;
+  }
+  .blogs-section .heading img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .blogs-section-container {
+    width: 80%;
+  }
+  .date-share-icon {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .blogs-heading-text h2 {
+    font-size: 40px;
+  }
+  .blogs-section-container {
+    width: 85%;
+  }
+  .blogs-related-articles-container {
+    width: 80%;
+  }
+  .blog-section-content-lists ul {
+    padding-left: 25px;
+  }
+  .blogs-cards-container .cards h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .blogs-heading-text h2 {
+    font-size: 35px;
+  }
+  .blogs-section-container {
+    width: 90%;
+  }
+  .blogs-related-articles-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blogs-cards-container .cards {
+    width: 48%;
+    gap: 0.5rem !important;
+  }
+  .cards:hover .card-image-wrapper img {
+    transform: scale(1);
+    transition: 0.6s ease;
+  }
+  .blog-section-content-lists h3 {
+    font-size: 19px !important;
+  }
+  .blog-section-content-lists p,
+  .blog-section-content-lists ul li {
+    font-size: 14px;
+  }
+  .blogs-cards-container .cards h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .blogs-heading-text h2 {
+    font-size: 27px;
+  }
+  .blogs-cards-container .cards {
+    width: 47.5%;
+    gap: 0.5rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .blogs-content-section p,
+  .blogs-content-section li {
+    font-size: 12px !important;
+  }
+  .blogs-content-section h3 {
+    font-size: 16px !important;
+  }
+  .blogs-related-articles-container h2 {
+    font-size: 25px !important;
+  }
+  .blogs-related-articles-container h4 {
+    font-size: 16px !important;
+  }
+  .blogs-heading-text {
+    width: 80%;
+  }
+  .blogs-heading-text h2 {
+    font-size: 23px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+  }
+  .date-share-icon {
+    margin-bottom: 0rem !important;
+  }
+  .date-share-icon + p {
+    margin-bottom: 1rem !important;
+  }
+  .blog-section-content-lists {
+    margin-bottom: 1.5rem !important;
+  }
+  .blogs-section-container {
+    width: 90%;
+  }
+  .blogs-related-articles-container {
+    width: 90%;
+  }
+  .blogs-cards-container .cards {
+    width: 100%;
+  }
+  .blog-section-content-lists ul {
+    padding-left: 20px;
+  }
+  .playbook-btn{
+    margin: 25px 0 !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blogs-heading-text {
+    width: 85%;
+  }
+  .blogs-heading-text h2 {
+    font-size: 20px;
+  }
+  .blogs-section-container {
+    width: 90%;
+  }
+  .date-share-icon {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .date-share-icon + p {
+    margin-bottom: 2rem !important;
+    font-size: 14px;
+  }
+  .blog-section-content-lists {
+    margin-bottom: 2rem !important;
+  }
+  .blog-section-content-lists ul li {
+    font-size: 14px;
+  }
+  .blog-section-content-lists:last-child p {
+    font-size: 14px;
+  }
+  .blogs-related-articles-container {
+    margin-top: 6%;
+  }
+  .blogs-related-articles-container h2:first-child {
+    font-size: 25px;
+  }
+
+  .blogs-related-articles-container {
+    width: 90%;
+  }
+  .blogs-cards-container .cards h4 {
+    font-size: 18px;
+  }
+  .footer-content-container {
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+   .blogs-section-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .blogs-heading-text {
+    width: 90%;
+  }
+  .blogs-heading-text h2 {
+    font-size: 18px;
+  }
+  .blogs-related-articles-container h2:first-child {
+    font-size: 20px;
+  }
+  .blogs-cards-container .cards h4 {
+    font-size: 14px !important;
+  }
+}

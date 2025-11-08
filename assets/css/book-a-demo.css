@@ -1,0 +1,192 @@
+.header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.book-section{
+    display: flex;
+    padding-bottom: clamp(30px, 2.6vw, 50px);
+    border-bottom: 1px solid rgba(102,102,102,0.3);
+}
+
+.book-section .book-left-wrapper{
+    width: clamp(500px, 46.7vw, 896px);
+    background-color: var(--green-color);
+    
+}
+.book-left-wrapper .book-left-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(20px,3.65vw, 70px);
+    padding: clamp(80px, 12.61vw, 242px) 0 clamp(80px, 7.3vw, 140px);
+
+}
+
+.book-left-wrapper .book-left-content-wrapper .book-left-header h2{
+    color: #fff;
+    font-size: clamp(30px, 5.21vw, 100px);
+}
+.book-left-wrapper .book-left-content-wrapper .book-left-header .book-left-header-desc{
+    color: #fff;
+    font-size: clamp(13px, 1.88vw, 36px);
+}
+.book-section .book-left-wrapper .book-banner{
+    width: 100%;
+}
+
+.book-left-wrapper .book-left-content-wrapper .book-left-body .book-left-body-desc{
+    font-size: clamp(12px, 1.065vw,20px);
+    color: var(--bg-color);
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+.book-section .book-right-wrapper .iframe-wrapper{
+    width:  clamp(400px, 33.23vw, 638px);
+    height: clamp(400px,41.98vw,806px);
+    padding-top: clamp(20px, 4.4vw, 86px);
+    margin-left: clamp( 30px, 14.33vw, 275px);
+}
+.book-section .book-right-wrapper .iframe-wrapper .iframe-container::-webkit-scrollbar{
+    width: 8px;
+}
+.book-section .book-right-wrapper .iframe-wrapper .iframe-container::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.book-section .book-right-wrapper .iframe-wrapper .iframe-container::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    background-clip: content-box;
+    /* background: #888686; */
+    background: red;
+    border-radius: 10px;
+}
+
+.book-section .book-right-wrapper .iframe-container{
+    width: clamp(400px, 30.1vw, 577px);
+    height:clamp(390px,41.41vw,795px);
+    border: 1px solid #0000001F;
+    border-radius: clamp(5px, 1.2vw, 23px);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.book-section .book-right-wrapper .iframe-wrapper .iframe-container iframe {
+  width: 100%;
+  height:100%;   
+  position: relative;
+}
+
+@media screen and (max-width:1600px){
+    .book-section .book-right-wrapper  .iframe-wrapper::-webkit-scrollbar{
+        width: 6px;
+    }
+}
+@media screen and (max-width:1400px){
+    .book-left-wrapper .book-left-content-wrapper {
+        padding: clamp(40px, 10vw, 242px) 0 clamp(40px, 7.3vw, 140px);
+
+    }
+
+    .book-section .book-right-wrapper .iframe-wrapper{
+        margin-left: clamp( 30px, 11vw, 275px);
+        height:clamp(390px,35vw,795px);
+    }
+     .book-section .book-right-wrapper .iframe-wrapper .iframe-container::-webkit-scrollbar{
+        width: 2px;
+    }
+    .book-section .book-right-wrapper .iframe-container{
+        width: clamp(400px, 30.1vw, 577px);
+        height:clamp(390px,35vw,795px);
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .book-section .book-left-wrapper{
+        width: clamp(384px, 46.7vw, 896px);
+    }
+    .book-left-wrapper .book-left-content-wrapper .book-left-body .book-left-body-desc{
+        width: 70%;
+    }
+    .book-section .book-right-wrapper .iframe-wrapper{
+        margin:0  clamp(15px, 3vw, 30px);
+        width:44vw;
+    }
+    .book-section .book-right-wrapper .iframe-container{
+        width:44vw;
+    }
+    .book-section .book-right-wrapper .iframe-container iframe{
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+     .book-section{
+        flex-direction: column;
+        gap: clamp(25px, 4.4vw, 86px);
+    }
+
+    .book-section .book-left-wrapper {
+        width: 100%;
+    }
+    
+    .book-section .book-right-wrapper .iframe-wrapper{
+        margin:0  auto;
+        width:80%;
+        padding-top: 0;
+        height: 500px;
+    }
+    .book-section .book-right-wrapper .iframe-container{
+        width:90%;
+        margin: 0 auto;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .book-section .book-left-wrapper {
+        width: 100%;
+    }
+    .book-section .book-right-wrapper .iframe-wrapper{
+        width:100%;
+    }
+    .book-section .book-right-wrapper .iframe-container{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .book-section{
+        padding-bottom: 25px;
+    }
+    .book-left-wrapper .book-left-content-wrapper .book-left-body .book-left-body-desc{
+        width: 80%;
+    }
+    .book-section .book-right-wrapper .iframe-wrapper{
+        margin:0  auto;
+        width:100%;
+        padding-top: 0;
+        height: 400px;
+    }
+    .book-section .book-right-wrapper .iframe-container{
+        width:90%;
+        margin: 0 auto;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .book-left-wrapper .book-left-content-wrapper .book-left-body .book-left-body-desc{
+        width: 87.5%;
+    }
+    /* .book-section .book-right-wrapper .iframe-wrapper .iframe-container iframe {
+        width:90%;
+    } */
+}
