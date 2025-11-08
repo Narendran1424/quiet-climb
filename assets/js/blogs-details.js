@@ -58,8 +58,8 @@ if(shareImgBtn3){
             const file=new File([blob],"https://narendran1424.github.io/quiet-climb/assets/images/blog-details3.png",{type:blob.type})
             if(navigator.canShare({files:[file]})){
                 await navigator.share({
-                    title:'Professionals At Work',
-                    text:'Professionals At Work',
+                    title:'Self Promoters',
+                    text:'Self Promoters',
                     files:[file]
                 });
             }
@@ -79,8 +79,8 @@ if(shareImgBtn4){
             const file=new File([blob],"https://narendran1424.github.io/quiet-climb/assets/images/blog-details4.png",{type:blob.type})
             if(navigator.canShare({files:[file]})){
                 await navigator.share({
-                    title:'Professionals At Work',
-                    text:'Professionals At Work',
+                    title:'Back In Meetings',
+                    text:'Back In Meetings',
                     files:[file]
                 });
             }
