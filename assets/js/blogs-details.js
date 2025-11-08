@@ -8,6 +8,7 @@ shareImgBtn.addEventListener("click",async()=>{
     try{
         const response=await fetch(imageUrl);
         const blob= await response.blob();
+        console.log(blob.size)
         const file=new File([blob],"/assets/images/blog-details1-img.png",{type:blob.type})
         if(navigator.canShare({files:[file]})){
             await navigator.share({
@@ -21,8 +22,4 @@ shareImgBtn.addEventListener("click",async()=>{
     }catch(error){
             console.error("Error while sharong this image")
         }
-    // navigator.share({ title:'Loud Leaders',
-    //             text:'Loud Leaders',
-    //             url:"http://127.0.0.1:5500/blogs-details.html/assets/images/blog-details1-img.png"
-    // })
 })
