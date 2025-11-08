@@ -69,7 +69,7 @@ img {
   width: 70%;
   font-family: "Poppins", sans-serif;
 }
-.shareimage-btn1,.shareimage-btn2.shareimage-btn3,
+.shareimage-btn1,.shareimage-btn2,.shareimage-btn3,
   .shareimage-btn4{
   width: clamp(25px, 4%, 4%);
 }
