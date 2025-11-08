@@ -13,7 +13,8 @@ shareImgBtn.addEventListener("click",async()=>{
         if(navigator.canShare({files:[file]})){
             await navigator.share({
                 title:'Loud Leaders',
-                text:'Check this Out',
+                text:'Loud Leaders',
+                files:[file]
             });
             console.log("image shared")
         }else{
